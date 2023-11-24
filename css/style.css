@@ -1,5 +1,8 @@
 /* RESET */
 
+img {
+    width: 100%;
+}
 
 /* GENERAL */
 
@@ -7,9 +10,6 @@
 
 /* HEADER */
 
-.body-header {
-    height: 60px;
-}
 
 /* WRAPPER */
 
@@ -18,13 +18,14 @@
 
 aside {
     width: 130px;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 56px);
 }
 
 /* MAIN */
 
 main {
     width: calc(100vw - 130px);
+    min-height: calc(100vh - 56px);
 }
 
 .main-header {
