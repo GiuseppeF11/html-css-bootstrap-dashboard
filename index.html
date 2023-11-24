@@ -16,39 +16,71 @@
 
 <body>
 
-        <header class="body-header bg-secondary">
-                <nav class="navbar bg-body-tertiary">
-                        <div class="container-fluid d-inline-block">
-                               <div class="row d-flex align-items-center bg-white">
-                                        <div class="col-1 d-flex align-items-center justify-content-between">
-                                                <a class="navbar-brand">
-                                                        LOGO
-                                                </a>
+        <header class="body-header">
+                <nav class="h-100 bg-white d-flex align-items-center">
+                        <form class="container-fluid">
+                                <div class="row w-100 d-flex align-items-center">
+                                        <div class="col-2">
+                                                <a href="#" class="d-md-none mh-25"><img src="img/img/mobile-logo.png" alt="mobile-logo"></a>
+                                                <a href="#" class="d-none d-md-block mh-25"><img src="img/img/logo.svg" alt="logo"></a>
                                         </div>
                                         <div class="col">
-                                                <form class="container-fluid">
-                                                        <div class="input-group">
-                                                          <span class="input-group-text" id="basic-addon1">
+                                                <div class="input-group">
+                                                        <span class="input-group-text" id="basic-addon1">
                                                                 <i class="fa-solid fa-magnifying-glass"></i>
-                                                          </span>
-                                                          <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
-                                                        </div>
-                                                </form>
+                                                        </span>
+                                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
                                         </div>
-                                        <div class="col-1 d-flex align-items-center justify-content-between">
-                                                <a href="">link</a>
-                                                <a href="">link</a>
-                                                <a href="">link</a>
-                                                <a href="">link</a>
+                                        <div class="col-2 d-flex justify-content-around">
+                                                <a href="#" class="p-2 a-grey"><i class="fa-solid fa-list-ul fs-5"></i></a>
+                                                <a href="#" class="p-2 a-grey"><i class="fa-solid fa-circle-question fs-5"></i></a>
+                                                <a href="#" class="p-2 a-grey"><i class="fa-solid fa-ellipsis-vertical fs-5"></i></a>
+                                                <a href="#" class="p-2 a-grey"><i class="fa-solid fa-bell text-warning fs-5"></i></a>
                                         </div>
                                 </div>
-                        </div>
+                        </form>
                 </nav>
+
         </header>
 
         <div class="wrapper d-flex">
-                <aside class="bg-success">
-                        ASIDE
+                <aside class="py-3 text-light d-flex justify-content-center">
+                        <nav class="row p-0 w-100 d-flex flex-column justify-content-between">
+                                <div class="col d-flex flex-column">
+                                        <ul>
+                                                <li class="my-2 p-1">
+                                                        <a href="" class="a-white d-flex justify-content-center p-2">
+                                                                <i class="w-25 me-2 fa-solid fa-house"></i>
+                                                                Home
+                                                        </a>
+                                                </li>
+                                                <li class="my-2 p-1">
+                                                        <a href="" class="a-white d-flex justify-content-center p-2">
+                                                                
+                                                                <i class="w-25 me-2 fa-solid fa-chart-simple"></i>
+                                                                Stats
+                                                        </a>
+                                                </li>
+                                                <li class="my-2 p-1">
+                                                        <a href="" class="a-white d-flex justify-content-center p-2">
+                                                                
+                                                                <i class="w-25 me-2 fa-solid fa-signal"></i>
+                                                        
+                                                        
+                                                                Signals
+                                                                
+                                                        </a>
+                                                </li>
+                                        </ul>
+                                </div>
+                                <div class="col d-flex flex-column-reverse ">
+                                        <a href="" class="a-white d-flex justify-content-center p-2">
+                                                <i class="w-25 me-2 fa-solid fa-gear"></i>
+                                                Admin
+                                        </a>
+                                </div>
+                        </nav>
                 </aside>
                 <main class="bg-warning-subtle">
                         <header class="main-header">
