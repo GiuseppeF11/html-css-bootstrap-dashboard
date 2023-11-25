@@ -37,6 +37,11 @@ a {
     height: 70px;
 }
 
+#bell-btn {
+    border: none;
+    background-color: #07203500;
+}
+
 /* WRAPPER */
 
 .wrapper {
@@ -52,6 +57,7 @@ aside {
 }
 
 aside i {
+    width: 30%;
     padding: 5px;
 }
 
@@ -62,8 +68,12 @@ main {
 }
 
 .main-header {
-    height: 120px;
+    min-height: 120px;
     background-color: rgb(0, 179, 255);
+}
+
+.main-body {
+    min-height: 200vh;
 }
 
 
@@ -75,15 +85,12 @@ main {
 
 /* HOVER */
 
-.a-white:hover {
+.a-white:hover, .a-black:hover, .a-grey:hover, #bell-btn:hover {
     background-color: rgba(191, 191, 191, 0.655);
 }
 
-.a-black {
+#add-student i:hover {
+    background-color: white;
     color: black;
+    transition: 0.3s;
 }
-
-.a-grey:hover {
-    background-color: rgba(210, 210, 210, 0.596);
-}
-

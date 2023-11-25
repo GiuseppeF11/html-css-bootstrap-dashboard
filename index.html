@@ -33,10 +33,26 @@
                                                 </div>
                                         </div>
                                         <div class="col-2 d-flex justify-content-around">
-                                                <a href="#" class="p-2 a-grey"><i class="fa-solid fa-list-ul fs-5"></i></a>
-                                                <a href="#" class="p-2 a-grey"><i class="fa-solid fa-circle-question fs-5"></i></a>
-                                                <a href="#" class="p-2 a-grey"><i class="fa-solid fa-ellipsis-vertical fs-5"></i></a>
-                                                <a href="#" class="p-2 a-grey"><i class="fa-solid fa-bell text-warning fs-5"></i></a>
+                                                <a href="#" class="p-2 a-grey d-flex align-items-center"><i class="fa-solid fa-list-ul fs-5"></i></a>
+                                                <a href="#" class="p-2 a-grey d-flex align-items-center"><i class="fa-solid fa-circle-question fs-5"></i></a>
+                                                <a href="#" class="p-2 a-grey d-flex align-items-center"><i class="fa-solid fa-ellipsis-vertical fs-5"></i></a>
+                                                <div class="btn-group">
+                                                        <button type="button" class="btn-lg" data-bs-toggle="dropdown" aria-expanded="false" id="bell-btn">
+                                                                <i class="fa-solid fa-bell text-warning fs-5"></i>
+                                                                <span class="visually-hidden">Toggle Dropdown</span>
+                                                        </button>
+                                                        <ul class="dropdown-menu px-2">
+                                                                <li>
+                                                                        <a href="" class="a-black d-block">Profilo</a>
+                                                                </li>
+                                                                <li>
+                                                                        <a href="" class="a-black d-block">Fatturazione</a>
+                                                                </li>
+                                                                <li>
+                                                                        <a href="" class="a-black d-block">Logout</a>
+                                                                </li>
+                                                        </ul>
+                                                </div>
                                         </div>
                                 </div>
                         </form>
@@ -50,38 +66,61 @@
                                 <div class="col d-flex flex-column">
                                         <ul>
                                                 <li class="my-2 py-1">
-                                                        <a href="" class="a-white d-flex ">
-                                                                <i class="w-50 fa-solid fa-house text-center"></i>
+                                                        <a href="" class="a-white py-2 d-flex ">
+                                                                <i class="fa-solid fa-house text-start"></i>
                                                                 Home
                                                         </a>
                                                 </li>
                                                 <li class="my-2 py-1">
-                                                        <a href="" class="a-white d-flex ">
-                                                                <i class="w-50 fa-solid fa-chart-simple text-center"></i>
+                                                        <a href="" class="a-white py-2 d-flex ">
+                                                                <i class="fa-solid fa-chart-simple text-start"></i>
                                                                 Stats
                                                         </a>
                                                 </li>
                                                 <li class="my-2 py-1">
-                                                        <a href="" class="a-white d-flex ">
-                                                                <i class="w-50 fa-solid fa-signal text-center"></i> 
+                                                        <a href="" class="a-white py-2 d-flex ">
+                                                                <i class="fa-solid fa-signal text-start"></i> 
                                                                 Signals
                                                         </a>
                                                 </li>
                                         </ul>
                                 </div>
                                 <div class="col d-flex flex-column-reverse ">
-                                        <a href="" class="a-white d-flex ">
-                                                <i class="w-50 fa-solid fa-gear text-center"></i>
+                                        <a href="" class="a-white py-2 d-flex">
+                                                <i class="fa-solid fa-gear text-start"></i>
                                                 Admin
                                         </a>
                                 </div>
                         </nav>
                 </aside>
-                <main class="bg-warning-subtle">
-                        <header class="main-header">
-                                MAIN HEADER
+                <main class="overflow-auto bg-warning-subtle">
+                        <header class="main-header container-fluid py-2 ">
+                                <div class="row h-100 text-white order-2 d-grid d-md-flex">
+                                        <div class="col border order-1 order-md-0">
+                                                BOOLEAN
+                                        </div>
+                                        <div class="col-4 border order-2 order-md-1">
+                                                <div class="">
+                                                        Studenti online negli ultimi 30 minuti
+                                                </div>
+                                                <div class="fs-2 fw-medium">
+                                                        125
+                                                </div>
+                                        </div>
+                                        <div class="col-3  border order-0 order-md-2">
+                                                <div>
+                                                        <a href="" class="p-1 text-white" id="add-student">
+                                                                Nuovo Studente
+                                                                <i class="fa-solid fa-plus p-2 border border-white rounded-1"></i>
+                                                        </a>
+                                                </div>
+
+                                        </div>
+                                </div>
                         </header>
-                        MAIN
+                        <div class="main-body">
+                                MAIN BODY
+                        </div>
                 </main>
         </div>
 
