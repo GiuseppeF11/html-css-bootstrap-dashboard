@@ -86,6 +86,14 @@ main {
     min-height: 200vh;
 }
 
+.main-body-left {
+    width: 65%;
+}
+
+.main-body-right {
+    width: 35%;
+}
+
 .i-code {
     display: flex;
     align-items: center;
