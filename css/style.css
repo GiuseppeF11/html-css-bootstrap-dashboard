@@ -83,15 +83,16 @@ main {
 }
 
 .main-body {
+    flex-direction: column;
     min-height: 200vh;
 }
 
 .main-body-left {
-    width: 65%;
+    width: 100%;
 }
 
 .main-body-right {
-    width: 35%;
+    width: 100%;
 }
 
 .i-code {
@@ -119,4 +120,21 @@ main {
     background-color: white;
     color: black;
     transition: 0.3s;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (min-width:768px) {
+    .main-body {
+        flex-direction: row;
+    }
+
+    .main-body-left {
+        width: 65%;
+    }
+
+    .main-body-right {
+        width: 35%;
+    }
 }
