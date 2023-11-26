@@ -84,7 +84,7 @@ main {
 
 .main-body {
     flex-direction: column;
-    min-height: 200vh;
+    min-height: 150vh;
 }
 
 .main-body-left {
