@@ -5,8 +5,8 @@ img {
 }
 
 ul {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 ul li {
@@ -48,7 +48,7 @@ button{
     border: none;
     border-radius: 30px;
     font-size: 10px;
-    padding: 5px 10px;
+    padding: 5px;
     margin-right: 10px;
 }
 
@@ -66,9 +66,13 @@ aside {
     background-color: #072035;
 }
 
+aside {
+    padding: 0 5px;
+}
+
 aside i {
     width: 30%;
-    padding: 5px;
+    text-align: center;
 }
 
 /* MAIN */
@@ -106,26 +110,23 @@ main {
     border-radius: 50%;
     margin-right: 10px;
 }
-/* FOOTER */
-
 
 
 /* HOVER */
 
-.a-white:hover, .a-black:hover, .a-grey:hover, #bell-btn:hover {
+.a-white:hover, .a-black:hover {
     background-color: rgba(191, 191, 191, 0.655);
-}
-
-#add-student i:hover {
-    background-color: white;
-    color: black;
     transition: 0.3s;
 }
 
+table button:hover, #boolean-col button:hover{
+    transform: scale(1.1);
+    transition: 0.5s ;
+}
 
 /* MEDIA QUERY */
 
-@media screen and (min-width:768px) {
+@media screen and (min-width:992px) {
     .main-body {
         flex-direction: row;
     }

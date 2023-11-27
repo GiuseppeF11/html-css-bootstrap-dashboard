@@ -19,9 +19,9 @@
         <header class="body-header">
                 <nav class="h-100 bg-white d-flex align-items-center">
                         <form class="container-fluid">
-                                <div class="row w-100 d-flex align-items-center">
+                                <div class="row align-items-center">
                                         <div class="col-2">
-                                                <a href="#" class="d-md-none mh-25"><img src="img/img/mobile-logo.png" alt="mobile-logo"></a>
+                                                <a href="#" class="d-md-none"><img src="img/img/mobile-logo.png" alt="mobile-logo"></a>
                                                 <a href="#" class="d-none d-md-block"><img src="img/img/logo.svg" alt="logo"></a>
                                         </div>
                                         <div class="col">
@@ -29,13 +29,13 @@
                                                         <span class="input-group-text" id="basic-addon1">
                                                                 <i class="fa-solid fa-magnifying-glass"></i>
                                                         </span>
-                                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                                        <input type="text" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Username" aria-describedby="basic-addon1">
                                                 </div>
                                         </div>
-                                        <div class="col-2 d-flex justify-content-around">
-                                                <a href="#" class="p-2 a-grey d-flex align-items-center"><i class="fa-solid fa-list-ul fs-5"></i></a>
-                                                <a href="#" class="p-2 a-grey d-flex align-items-center"><i class="fa-solid fa-circle-question fs-5"></i></a>
-                                                <a href="#" class="p-2 a-grey d-flex align-items-center"><i class="fa-solid fa-ellipsis-vertical fs-5"></i></a>
+                                        <div class="col-auto d-flex justify-content-around">
+                                                <a href="#" class="p-2 a-grey d-flex align-items-center d-none d-lg-block"><i class="fa-solid fa-list-ul fs-5"></i></a>
+                                                <a href="#" class="p-2 a-grey d-flex align-items-center d-none d-lg-block"><i class="fa-solid fa-circle-question fs-5"></i></a>
+                                                <a href="#" class="p-2 a-grey d-flex align-items-center d-none d-lg-block"><i class="fa-solid fa-ellipsis-vertical fs-5"></i></a>
                                                 <div class="btn-group">
                                                         <button type="button" class="btn-lg" data-bs-toggle="dropdown" aria-expanded="false" id="bell-btn">
                                                                 <i class="fa-solid fa-bell text-warning fs-5"></i>
@@ -61,39 +61,43 @@
         </header>
 
         <div class="wrapper d-flex">
-                <aside class="py-3 text-light d-flex justify-content-center">
-                        <nav class="row w-100 d-flex flex-column justify-content-between">
+                <aside class="text-light d-flex justify-content-center">
+                        <nav class="row my-2 text-start">
                                 <div class="col d-flex flex-column">
                                         <ul>
-                                                <li class="my-2 py-1">
-                                                        <a href="" class="a-white py-2 d-flex ">
-                                                                <i class="fa-solid fa-house text-start"></i>
-                                                                Home
+                                                <li class="my-2">
+                                                        <a href="" class="a-white">
+                                                                <i class="fa-solid fa-house text-center"></i>
+                                                                <span class="p-1">Home</span>
                                                         </a>
                                                 </li>
-                                                <li class="my-2 py-1">
-                                                        <a href="" class="a-white py-2 d-flex ">
-                                                                <i class="fa-solid fa-chart-simple text-start"></i>
-                                                                Stats
+                                                <li class="my-2">
+                                                        <a href="" class="a-white">
+                                                                <i class="fa-solid fa-chart-simple text-center"></i>
+                                                                <span class="p-1">Stats</span>
                                                         </a>
                                                 </li>
-                                                <li class="my-2 py-1">
-                                                        <a href="" class="a-white py-2 d-flex ">
-                                                                <i class="fa-solid fa-signal text-start"></i> 
-                                                                Signals
+                                                <li class="my-2">
+                                                        <a href="" class="a-white">
+                                                                <i class="fa-solid fa-signal text-center"></i> 
+                                                                <span class="p-1">Signals</span>
                                                         </a>
                                                 </li>
                                         </ul>
                                 </div>
                                 <div class="col d-flex flex-column-reverse ">
-                                        <a href="" class="a-white py-2 d-flex">
-                                                <i class="fa-solid fa-gear text-start"></i>
-                                                Admin
-                                        </a>
+                                        <ul>
+                                                <li class="my-2">
+                                                        <a href="" class="a-white">
+                                                                <i class="fa-solid fa-gear text-center"></i>
+                                                                <span class="p-1">Admin</span>
+                                                        </a>
+                                                </li>
+                                        </ul>
                                 </div>
                         </nav>
                 </aside>
-                <main class="overflow-auto">
+                <main class="overflow-y-auto">
                         <header class="main-header container-fluid py-3">
                                 <nav class="row h-100 text-white order-2 d-grid d-md-flex">
                                         <section class="col order-1 order-md-0" id="boolean-col">
@@ -220,7 +224,7 @@
 
                                                                                 <div class="col-12">
                                                                                         <label for="formFile" class="form-label">Foto</label>
-                                                                                        <input class="form-control" type="file" id="formFile">
+                                                                                        <input class="form-control" type="file" id="formFile" required>
                                                                                 </div>
 
                                                                                 <div class="col-12">
@@ -260,8 +264,8 @@
                                                                                 <thead> 
                                                                                         <tr> 
                                                                                                 <th class="col">Nome</th> 
-                                                                                                <th class="col text-center ">Data Inizio</th> 
-                                                                                                <th class="col text-center ">Roi</th> 
+                                                                                                <th class="col text-center d-none d-md-table-cell">Data Inizio</th> 
+                                                                                                <th class="col text-center d-none d-md-table-cell">Roi</th> 
                                                                                                 <th class="col text-center">Stato</th> 
                                                                                                 <th class="col text-center">Azioni</th> 
                                                                                         </tr> 
@@ -278,8 +282,8 @@
                                                                                                                 </div>
                                                                                                         </div>
                                                                                                 </td> 
-                                                                                                <td class="text-center ">15 Feb 2021</td> 
-                                                                                                <td class="text-center">20%</td> 
+                                                                                                <td class="text-center d-none d-md-table-cell">15 Feb 2021</td> 
+                                                                                                <td class="text-center d-none d-md-table-cell">20%</td> 
                                                                                                 <td class="text-center">
                                                                                                         <button class="bg-success m-0 rounded-3">
                                                                                                                 done
@@ -306,8 +310,8 @@
                                                                                                                 </div>
                                                                                                         </div>
                                                                                                 </td> 
-                                                                                                <td class="text-center">16 Feb 2021</td> 
-                                                                                                <td class="text-center">20%</td> 
+                                                                                                <td class="text-center d-none d-md-table-cell">16 Feb 2021</td> 
+                                                                                                <td class="text-center d-none d-md-table-cell">20%</td> 
                                                                                                 <td class="text-center">
                                                                                                         <button class="bg-success m-0 rounded-3">
                                                                                                                 done
@@ -334,8 +338,8 @@
                                                                                                                 </div>
                                                                                                         </div>
                                                                                                 </td> 
-                                                                                                <td class="text-center">17 Feb 2021</td> 
-                                                                                                <td class="text-center">20%</td> 
+                                                                                                <td class="text-center d-none d-md-table-cell">17 Feb 2021</td> 
+                                                                                                <td class="text-center d-none d-md-table-cell">20%</td> 
                                                                                                 <td class="text-center">
                                                                                                         <button class="bg-warning m-0 rounded-3">
                                                                                                                 process
@@ -362,8 +366,8 @@
                                                                                                                 </div>
                                                                                                         </div>
                                                                                                 </td>  
-                                                                                                <td class="text-center">18 Feb 2021</td> 
-                                                                                                <td class="text-center">20%</td> 
+                                                                                                <td class="text-center d-none d-md-table-cell">18 Feb 2021</td> 
+                                                                                                <td class="text-center d-none d-md-table-cell">20%</td> 
                                                                                                 <td class="text-center">
                                                                                                         <button class="bg-success m-0 rounded-3">
                                                                                                                 done
@@ -390,8 +394,8 @@
                                                                                                                 </div>
                                                                                                         </div>
                                                                                                 </td> 
-                                                                                                <td class="text-center">19 Feb 2021</td> 
-                                                                                                <td class="text-center">20%</td> 
+                                                                                                <td class="text-center d-none d-md-table-cell">19 Feb 2021</td> 
+                                                                                                <td class="text-center d-none d-md-table-cell">20%</td> 
                                                                                                 <td class="text-center">
                                                                                                         <button class="bg-danger m-0 rounded-3">
                                                                                                                 failed
@@ -418,8 +422,8 @@
                                                                                                                 </div>
                                                                                                         </div>
                                                                                                 </td>  
-                                                                                                <td class="text-center">20 Feb 2021</td> 
-                                                                                                <td class="text-center">20%</td> 
+                                                                                                <td class="text-center d-none d-md-table-cell">20 Feb 2021</td> 
+                                                                                                <td class="text-center d-none d-md-table-cell">20%</td> 
                                                                                                 <td class="text-center">
                                                                                                         <button class="bg-success m-0 rounded-3">
                                                                                                                 done
@@ -446,8 +450,8 @@
                                                                                                                 </div>
                                                                                                         </div>
                                                                                                 </td> 
-                                                                                                <td class="text-center">21 Feb 2021</td> 
-                                                                                                <td class="text-center">20%</td> 
+                                                                                                <td class="text-center d-none d-md-table-cell">21 Feb 2021</td> 
+                                                                                                <td class="text-center d-none d-md-table-cell">20%</td> 
                                                                                                 <td class="text-center">
                                                                                                         <button class="bg-danger m-0 rounded-3">
                                                                                                                 failed
@@ -474,8 +478,8 @@
                                                                                                                 </div>
                                                                                                         </div>
                                                                                                 </td> 
-                                                                                                <td class="text-center">22 Feb 2021</td> 
-                                                                                                <td class="text-center">20%</td> 
+                                                                                                <td class="text-center d-none d-md-table-cell">22 Feb 2021</td> 
+                                                                                                <td class="text-center d-none d-md-table-cell">20%</td> 
                                                                                                 <td class="text-center">
                                                                                                         <button class="bg-success m-0 rounded-3">
                                                                                                                 done
@@ -592,6 +596,7 @@
                 </main>
         </div>
 
+        <!-- BOOTSTRAP JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 
