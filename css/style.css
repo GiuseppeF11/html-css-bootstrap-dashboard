@@ -21,6 +21,7 @@ a {
 
 .a-white {
     color: white;
+    display: block;
 }
 
 .a-black {
@@ -30,6 +31,7 @@ a {
 .a-grey {
     color: rgb(123, 123, 123);
 }
+
 
 /* HEADER */
 
@@ -74,7 +76,6 @@ aside i {
     width: 30%;
     text-align: center;
 }
-
 /* MAIN */
 
 main {
@@ -91,14 +92,6 @@ main {
     min-height: 150vh;
 }
 
-.main-body-left {
-    width: 100%;
-}
-
-.main-body-right {
-    width: 100%;
-}
-
 .i-code {
     display: flex;
     align-items: center;
@@ -111,10 +104,14 @@ main {
     margin-right: 10px;
 }
 
+.badge {
+    background-color: var(--bs-link-hover-color);
+}
+
 
 /* HOVER */
 
-.a-white:hover, .a-black:hover {
+aside ul li:hover, .a-black:hover {
     background-color: rgba(191, 191, 191, 0.655);
     transition: 0.3s;
 }
