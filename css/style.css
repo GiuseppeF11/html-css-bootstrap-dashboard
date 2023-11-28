@@ -32,6 +32,10 @@ a {
     color: rgb(123, 123, 123);
 }
 
+.badge {
+    background-color: var(--bs-link-hover-color);
+}
+
 
 /* HEADER */
 
@@ -102,10 +106,6 @@ main {
     width: 30px;
     border-radius: 50%;
     margin-right: 10px;
-}
-
-.badge {
-    background-color: var(--bs-link-hover-color);
 }
 
 
