@@ -58,6 +58,11 @@ button{
     margin-right: 10px;
 }
 
+.body-header #mobile-logo {
+    max-width: 60px;
+}
+
+
 /* WRAPPER */
 
 .wrapper {
