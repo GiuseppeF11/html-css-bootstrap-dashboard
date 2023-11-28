@@ -70,14 +70,11 @@ aside {
     width: 130px;
     background-image: url(../img/img/sidebar-bg.png);
     background-color: #072035;
-}
-
-aside {
-    padding: 0 5px;
+    text-align: center;
 }
 
 aside i {
-    width: 30%;
+    font-size: 30px;
     text-align: center;
 }
 /* MAIN */
@@ -108,10 +105,13 @@ main {
     margin-right: 10px;
 }
 
+.offcanvas.offcanvas-end {
+    width: 100%;
+}
 
 /* HOVER */
 
-aside ul li:hover, .a-black:hover {
+aside a:hover , .a-black:hover {
     background-color: rgba(191, 191, 191, 0.655);
     transition: 0.3s;
 }
@@ -122,6 +122,27 @@ table button:hover, #boolean-col button:hover{
 }
 
 /* MEDIA QUERY */
+
+@media screen and (min-width:768px) {
+
+    .offcanvas.offcanvas-end {
+        width: 50%;
+    }
+
+    aside {
+        width: 130px;
+        background-image: url(../img/img/sidebar-bg.png);
+        background-color: #072035;
+        text-align: start;
+    }
+
+    aside i {
+        width: 30%;
+        font-size: 20px;
+    }
+}
+
+
 
 @media screen and (min-width:992px) {
     .main-body {
